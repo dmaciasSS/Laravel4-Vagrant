@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+This sample code is intended to be used as a simple starting point for creating your own custom reply template.
+Modifications to the XML structure should not be required and may result in your custom template failing to load properly.
+-->
+<Module>
+<ModulePrefs title="Custom Reply Template Sample"
+         author="Cisco Systems, Inc."
+         scrolling="true">
+<Require feature="dynamic-height"/>
+<Require feature="settitle"/>
+<Require feature="minimessage"/>
+<Require feature="setprefs"/>
+</ModulePrefs>
+<Content type="html">
+<![CDATA[
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<!-- Provide your custom reply template code below. --> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<!-- Default CSS includes to provide uniform look and feel. -->
+		<link rel="stylesheet" type="text/css" href="http://172.31.5.56/css/ccp.css"  />
+		<link rel="stylesheet" type="text/css" href="http://172.31.5.56/css/reply.css" />
+		
+		<!-- Required Javascript includes to provide base reply template functionality including the closeTemplate() function. -->
+		<script type='text/javascript' src='http://172.31.5.56/templates/reply/js/ccp-session.js'></script>
+		<script type='text/javascript' src='http://172.31.5.56/templates/reply/js/template-utils.js'></script>
+		
+		<script type='text/javascript'>
+			//Set up the required ccpSession object.
+			var ccpSession = null;
+			ccpSession = new CcpSession(window.location.href);
+		
+			function processCustomReply(message) {
+				//Provide your custom reply logic here.
+				//Note: The alert below only serves as a placeholder and can be removed or modified as needed. 
+				alert('Processing message \'' + message + '\'!');
+				
+				//Close the reply template and set the Social Contact state to 'handled'.
+				closeTemplate('handled');
+			}
+		</script>
+	</head>
+	
+	<body>
+		<div id="reply">
+			<form>
+				<table style="width:100%">
+					<tr>
+						<td>
+							<table style="width:100%">
+								<tr>
+									<th>
+										<div id="title">Custom Reply Template Sample</div>
+									</th>
+								</tr>
+								<tr>
+									<td>
+										<div id="description">This is a sample of a Custom Reply Template</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table style="width:100%">
+								<tr>
+									<td>
+										<textarea id="replyTextarea" width="150" height="100"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<!-- Sample buttons which invoke Javascript to handle click events. -->
+										<!-- When clicked, reply button calls processCustomReply() function and passes in the current value of replyTextArea. -->
+										<input id="customreply" type="button" value="Reply" onclick="processCustomReply(document.getElementById('replyTextarea').value);">
+										<!-- When clicked, cancel button calls closeTemplate() with a value of  'unread' to unreserve the Social Contact. -->
+										<input id="cancel" type="button" value="Cancel" onclick="javascript:closeTemplate('unread')">
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
+]]>
+</Content>
+</Module>
