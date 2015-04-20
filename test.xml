@@ -5,8 +5,8 @@ This sample code is intended to be used as a simple starting point for creating 
 Modifications to the XML structure should not be required and may result in your custom template failing to load properly.
 -->
 <Module>
-<ModulePrefs title="Custom Reply Template Sample"
-         author="Cisco Systems, Inc."
+<ModulePrefs title="SG Demo Twitter Reply Template"
+         author="ShoreGroup"
          scrolling="true">
 <Require feature="dynamic-height"/>
 <Require feature="settitle"/>
