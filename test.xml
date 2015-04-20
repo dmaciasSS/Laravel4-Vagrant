@@ -54,12 +54,12 @@ Modifications to the XML structure should not be required and may result in your
 							<table style="width:100%">
 								<tr>
 									<th>
-										<div id="title">Custom Reply Template Sample</div>
+										<div id="title">SG Demo Twitter Reply Template</div>
 									</th>
 								</tr>
 								<tr>
 									<td>
-										<div id="description">This is a sample of a Custom Reply Template</div>
+										<div id="description">Don't forget to send people to our site at http://shoregroup.com/contact</div>
 									</td>
 								</tr>
 							</table>
