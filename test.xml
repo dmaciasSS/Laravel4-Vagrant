@@ -5,13 +5,13 @@ This sample code is intended to be used as a simple starting point for creating 
 Modifications to the XML structure should not be required and may result in your custom template failing to load properly.
 -->
 <Module>
-<ModulePrefs title="Custom Reply Template Sample"
-         author="Cisco Systems, Inc."
-         scrolling="true">
-<Require feature="dynamic-height"/>
-<Require feature="settitle"/>
-<Require feature="minimessage"/>
-<Require feature="setprefs"/>
+<ModulePrefs title="Reply Using Twitter" author="Cisco" author_email="help@cisco.com" scrolling="true" height="700">
+	<Require feature="dynamic-height"/>
+	<Require feature="settitle"/>
+	<Require feature="minimessage"/>
+	<Require feature="setprefs"/>
+	<Locale messages="/messages/en_ALL.xml"/>
+	<Locale lang="en" country="ALL" messages="/messages/en_ALL.xml"/>
 </ModulePrefs>
 <Content type="html">
 <![CDATA[
