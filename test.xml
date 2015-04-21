@@ -59,7 +59,8 @@ Modifications to the XML structure should not be required and may result in your
                             </tr>
                             <tr>
                                 <td>
-                                    <div id="description">Don't forget to send people to our site at http://shoregroup.com/contact</div>
+                                	<div id="logo"><img src="https://g.twimg.com/dev/documentation/image/Twitter_logo_blue_48.png"></img></div>
+                                  <div id="description">Don't forget to send people to our site at http://shoregroup.com/contact</div>
                                 </td>
                             </tr>
                         </table>
