@@ -45,50 +45,51 @@ Modifications to the XML structure should not be required and may result in your
 		</script>
 	</head>
 	
-	<body>
-		<div id="reply">
-			<form>
-				<table style="width:100%">
-					<tr>
-						<td>
-							<table style="width:100%">
-								<tr>
-									<th>
-										<div id="title"><img src="https://g.twimg.com/dev/documentation/image/Twitter_logo_blue_48.png">SG Demo Twitter Reply Template</div>
-									</th>
-								</tr>
-								<tr>
-									<td>
-										<div id="description">Don't forget to send people to our site at http://shoregroup.com/contact</div>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<table style="width:100%">
-								<tr>
-									<td>
-										<textarea id="replyTextarea" width="150" height="100"></textarea>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<!-- Sample buttons which invoke Javascript to handle click events. -->
-										<!-- When clicked, reply button calls processCustomReply() function and passes in the current value of replyTextArea. -->
-										<input id="customreply" type="button" value="Reply" onclick="processCustomReply(document.getElementById('replyTextarea').value);">
-										<!-- When clicked, cancel button calls closeTemplate() with a value of  'unread' to unreserve the Social Contact. -->
-										<input id="cancel" type="button" value="Cancel" onclick="javascript:closeTemplate('unread')">
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-				</table>
-			</form>
-		</div>
-	</body>
+<body>
+    <div id="reply">
+        <form>
+            <table style="width:100%">
+                <tr>
+                    <td>
+                        <table style="width:100%">
+                            <tr>
+                                <th>
+                                    <div id="title"><div id="logo"><img src="https://g.twimg.com/dev/documentation/image/Twitter_logo_blue_48.png"></img></div>SG Demo Twitter Reply Template</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="description">Don't forget to send people to our site at http://shoregroup.com/contact</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="width:100%">
+                            <tr>
+                                <td>
+                                    <textarea id="replyTextarea" width="150" height="100"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!-- Sample buttons which invoke Javascript to handle click events. -->
+                                    <!-- When clicked, reply button calls processCustomReply() function and passes in the current value of replyTextArea. -->
+                                    <input id="customreply" type="button" value="Reply" onclick="processCustomReply(document.getElementById('replyTextarea').value);">
+                                    <!-- When clicked, cancel button calls closeTemplate() with a value of 'unread' to unreserve the Social Contact. -->
+                                    <input id="cancel" type="button" value="Cancel" onclick="javascript:closeTemplate('unread')">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
 </html>
 ]]>
 </Content>
