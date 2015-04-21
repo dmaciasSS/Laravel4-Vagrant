@@ -1,3 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+This sample code is intended to be used as a simple starting point for creating your own custom reply template.
+Modifications to the XML structure should not be required and may result in your custom template failing to load properly.
+-->
+<Module>
+<ModulePrefs title="Custom Reply Template Sample"
+         author="Cisco Systems, Inc."
+         scrolling="true">
+<Require feature="dynamic-height"/>
+<Require feature="settitle"/>
+<Require feature="minimessage"/>
+<Require feature="setprefs"/>
+</ModulePrefs>
+<Content type="html">
+<![CDATA[
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
