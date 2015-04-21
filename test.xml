@@ -54,7 +54,7 @@ Modifications to the XML structure should not be required and may result in your
 							<table style="width:100%">
 								<tr>
 									<th>
-										<div id="title">SG Demo Twitter Reply Template</div>
+										<div id="title"><img src="https://g.twimg.com/dev/documentation/image/Twitter_logo_blue_48.png">SG Demo Twitter Reply Template</div>
 									</th>
 								</tr>
 								<tr>
